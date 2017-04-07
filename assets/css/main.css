@@ -179,13 +179,18 @@ img.img-box{
 img.img-box:hover{
     transform: scale(1.03);
 }
-
+.center{
+    background-color: green;
+    height: 431px;
+    position: absolute;
+}
 .center:hover{
     background: #f7b617;
-    position: absolute;
+    
 }
 .mark-up{
     text-align: center;
+    color: #fff;
     position: absolute;
 
 }
