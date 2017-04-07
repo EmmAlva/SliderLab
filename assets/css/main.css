@@ -1,4 +1,9 @@
 /*recomendable body comenzar en "0" para eliminar los margin y padding por defecto*/
+body{
+    background-color: white;
+    margin: 0;
+    font-family: 'Georgia';
+}
 
 /*Direct style for nav tag*/
 nav{
@@ -32,12 +37,8 @@ nav{
     background-image: url(../img/icon/laboratoria.svg);
 }
 
-.menu{
-  position: absolute;
-  z-index: 2000;
-}
 /*Hamburger*/
-a .menu{
+a.menu{ /*clase "menu" dentro del "a" .....  (a .menu = todos los hijos de "a" que tengan clase menu) */
   top:0;
   right:0;
   height: 4px;
@@ -70,21 +71,19 @@ a .menu{
   background: #f7b617;
   transition: all 0.3s;
 }
-#toggle:hover {
-  transition: top 0.4s;
-}
+
 /*END HAMBURGUER*/
 /*Al hacel "click", se agrega una clase llamada ".open*/
 .open .menu{
-    background: none !important;
+    background: none !important; /*eliminar el color de la barrita del menu*/
 }
 .open .menu:after{
     top : 0px !important;
     background: #fff !important;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-.open .menu {opacity: 0;}
+/*.open .menu {opacity: 0;}*/
 .open .menu:before{
     top : 0px !important;
     background: #fff !important;
@@ -104,7 +103,7 @@ nav .nav-background{
 }
 nav.open .nav-background{
     opacity: 1;
-    background-color: #f4ac24 !important;
+    background-color: #F4AC24 !important;
     transition: background-color 0.6s cubic-bezier(0.7,0.01, 0.3, 1);
 }
 nav.open{
@@ -130,11 +129,12 @@ nav ul li{
     visibility: hidden;
 }
 nav ul li a{
-    color: black;
+    color: #fff;
     width: 100%;
     display: block;
     padding: 8px 0 0 ;
-    letter-spacing: -0.6em;
+    letter-spacing: -0.03em;
+    text-decoration: none;
 }
 nav ul li a:hover{
     color: #f7b617;
@@ -152,19 +152,46 @@ nav.open ul li{
     font-size: 60px;
     visibility: visible !important;
 }
+.overflow-hidden{
+    overflow: hidden;
+}
+
 
 #coders{
-    margin: 22px;
-
-    padding: 50px;
+    background:#DE39E0;
+    margin-top: 50px;
+    margin-left: 30px;
 }
-
- img{
-    width: 234px;
-    height: 231px;
+.figure{
+    background-color: #D20F0F;
+    overflow: hidden; /*mantiene el contenedor a pesar del zoom*/
     float: left;
-    overflow: auto;
+    margin: 0; /*elimina los margin y padding por defecto*/
+    position: relative;  
 }
+img.img-box{
+    width: 434px;
+    height: 431px;
+    float: left;
+    position: relative;
+}
+
+img.img-box:hover{
+    transform: scale(1.03);
+}
+
+.center:hover{
+    background: #f7b617;
+    position: absolute;
+}
+.mark-up{
+    text-align: center;
+    position: absolute;
+
+}
+
+
+
 
 
 
