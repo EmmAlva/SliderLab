@@ -163,7 +163,7 @@ nav.open ul li{
     margin-left: 30px;
 }
 .figure{
-    background-color: #D20F0F;
+    background-color: #f7b617;
     overflow: hidden; /*mantiene el contenedor a pesar del zoom*/
     float: left;
     margin: 0; /*elimina los margin y padding por defecto*/
@@ -178,16 +178,9 @@ img.img-box{
 
 img.img-box:hover{
     transform: scale(1.03);
+    opacity: 0.5;
 }
-.center{
-    background-color: green;
-    height: 431px;
-    position: absolute;
-}
-.center:hover{
-    background: #f7b617;
-    
-}
+
 .mark-up{
     text-align: center;
     color: #fff;
