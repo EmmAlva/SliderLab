@@ -1,4 +1,8 @@
 /*recomendable body comenzar en "0" para eliminar los margin y padding por defecto*/
+*{
+    margin:0;
+    padding:0;
+}
 body{
     background-color: white;
     margin: 0;
@@ -155,10 +159,26 @@ nav.open ul li{
 .overflow-hidden{
     overflow: hidden;
 }
-/*Typewriter effect*/
+/*Typewriter effect and more*/
 div#slide{
     background-color: #000;
+    width: 100%;
+    height: 400px;
+    
 }
+a.typewriter{
+    color: white;
+    padding-top:10em;
+
+
+}
+
+div#title{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
 
 /*Imagenes*/
 #coders{
