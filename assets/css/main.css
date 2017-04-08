@@ -16,7 +16,7 @@ nav{
     margin-top: 0;
     position: fixed;
     padding-top: 0;
-    background: #000;
+    background: none; /*hacer transparente*/
     transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
@@ -155,8 +155,12 @@ nav.open ul li{
 .overflow-hidden{
     overflow: hidden;
 }
+/*Typewriter effect*/
+div#slide{
+    background-color: #000;
+}
 
-
+/*Imagenes*/
 #coders{
     background:#DE39E0;
     margin-top: 50px;
@@ -167,25 +171,26 @@ nav.open ul li{
     overflow: hidden; /*mantiene el contenedor a pesar del zoom*/
     float: left;
     margin: 0; /*elimina los margin y padding por defecto*/
-    position: relative;  
+    padding: 0;
 }
 img.img-box{
     width: 434px;
     height: 431px;
-    float: left;
+    float: left; /*pego las fotos, que esten super juntas*/
     position: relative;
 }
-
 img.img-box:hover{
     transform: scale(1.03);
-    opacity: 0.5;
+    opacity: 0.3;
 }
-
 .mark-up{
+    width: 33.33%;
+    margin-top: 15%;
+    /*margin-left: 10%;*/
     text-align: center;
     color: #fff;
     position: absolute;
-
+    font-size: 45px;
 }
 
 
